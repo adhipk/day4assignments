@@ -19,11 +19,11 @@ function clickme(){
 		var inner=document.getElementById("main");
 		console.log(parsedData[marker]);
 		if(marker=="home")
-			inner.innerHTML="<h3>"+parsedData[marker]["title"]+"</h3>"+"<p>"+parsedData[marker]["content"]+"</p>";
+			inner.innerHTML=`<h3> ${parsedData[marker]["title"]} </h3><p>${parsedData[marker]["content"]}</p>`;
 		if(marker=="about")
-			inner.innerHTML="<h3>"+parsedData[marker]["title"]+"</h3>"+"<p>"+parsedData[marker]["content"]+"</p>";
+			inner.innerHTML=`<h3> ${parsedData[marker]["title"]} </h3><p>${parsedData[marker]["content"]}</p>`;
 		if(marker=="contact")
-			inner.innerHTML="<h3>"+parsedData[marker]["title"]+"</h3>"+parsedData[marker]["content"];
+			inner.innerHTML=`<h3> ${parsedData[marker]["title"]}</h3> ${parsedData[marker]["content"]}`;
 		if(marker=="recent")
-			inner.innerHTML="<h3>"+parsedData[marker]["title"]+"</h3><h4>"+parsedData[marker]["newsArray"][0]["title"]+"</h4><p>"+parsedData[marker]["newsArray"][0]["news"]+"</p><h4>"+parsedData[marker]["newsArray"][1]["title"]+"</h4><p>"+parsedData[marker]["newsArray"][1]["news"]+"</p>";
+			inner.innerHTML=`<h3>${parsedData[marker]["title"]} </h3><h4>${parsedData[marker]["newsArray"][0]["title"]}</h4><p>${parsedData[marker]["newsArray"][0]["news"]} </p><h4> ${parsedData[marker]["newsArray"][1]["title"]} </h4><p>${parsedData[marker]["newsArray"][1]["news"]}</p>`;
 }
